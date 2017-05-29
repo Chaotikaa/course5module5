@@ -1,0 +1,13 @@
+<div ng-if="myInfoCtrl.userData" class="container">
+  <h3>Your info:</h3>
+  <p>First name:  {{myInfoCtrl.userData.first_name}}</p>
+  <p>Last name: {{myInfoCtrl.userData.last_name}}</p>
+  <p>Email: {{myInfoCtrl.userData.email}}</p>
+  <p>Phone number: {{myInfoCtrl.userData.phone_number}}</p>
+  <p>Favorite Menu Item: {{myInfoCtrl.userData.menu_number}}</p>
+</div>
+<div class="container" ng-if="myInfoCtrl.userData == null">
+  <p>
+    <a ui-sref="public.signup">Sign up Now!</a>
+  </p>
+</div>
